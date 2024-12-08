@@ -1,13 +1,15 @@
 :root {
-  --font-family: sans-serif;
+  --primaryFont: sans-serif;
   --background: #fecc06f8;
+  --background2: #e0ccccf8;
 }
 
 nav {
-  width: 220px;
+  width: 250px;
   height: 100vh;
-  font-family: var(--font-family);
+  font-family: var(--primaryFont);
   margin-left: 20px;
+  border-right: 2px #e0ccccf8 solid;
 }
 nav > div.logo {
   display: flex;
@@ -25,7 +27,7 @@ nav > div.logo > img {
 nav > div.menu > ul > li {
   display: flex;
   flex-direction: row;
-  width: inherit;
+  width: 90%;
   height: 50px;
   align-items: center;
   border: 10px;
@@ -76,21 +78,21 @@ nav > div.user > img {
   object-fit: cover;
 }
 nav > div.user > span.name {
-  font-family: var(--font-family);
+  font-family: var(--primaryFont);
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 20px;
   color: black;
 }
 nav > div.user > span {
-  color: #b9b9b9f8;
+  color: var(--background2);
 }
 nav > div.user > button {
-  background: #faf2f2f8;
+  background: var(--background2);
   border: none;
   width: 90%;
   height: 50px;
   border-radius: 10px;
-  font-family: var(--font-family);
+  font-family: var(--primaryFont);
   font-weight: 600;
 }

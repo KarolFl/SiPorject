@@ -1,0 +1,53 @@
+main {
+  margin-left: 10px;
+}
+main > div.bar {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+main > div.bar > div.redo {
+  width: 45px;
+  height: 45px;
+  background: var(--background2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+main > div.bar > span.gray {
+  font-family: var(--primaryFont);
+  color: var(--background2);
+}
+main > div.bar > span {
+  font-weight: 600;
+  font-family: var(--primaryFont);
+}
+main > div.bar > div.redo > img {
+  width: 30px;
+  height: 30px;
+}
+main > div.bar > div.search {
+  background: var(--background2);
+  display: flex;
+  width: 220px;
+  height: 35px;
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+}
+main > div.bar > div.search > img {
+  width: 25px;
+  height: 25px;
+}
+main > div.bar > div.search > input {
+  background: transparent;
+  border: none;
+}
