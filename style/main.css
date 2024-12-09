@@ -1,14 +1,20 @@
 main {
   margin-left: 10px;
 }
-main > div.bar {
+main > div.placement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main > div.placement > div.bar {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 25px;
   align-items: center;
 }
-main > div.bar > div.redo {
+main > div.placement > div.bar > div.redo {
   width: 45px;
   height: 45px;
   background: var(--background2);
@@ -18,36 +24,111 @@ main > div.bar > div.redo {
   border-radius: 10px;
   margin-left: 50px;
 }
-main > div.bar > span.gray {
+main > div.placement > div.bar > span.gray {
   font-family: var(--primaryFont);
   color: var(--background2);
 }
-main > div.bar > span {
+main > div.placement > div.bar > span {
   font-weight: 600;
   font-family: var(--primaryFont);
 }
-main > div.bar > div.redo > img {
+main > div.placement > div.bar > div.redo > img {
   width: 30px;
   height: 30px;
 }
-main > div.bar > div.search {
+main > div.placement > div.search {
   background: var(--background2);
   display: flex;
-  width: 220px;
+  width: 240px;
   height: 35px;
   border-radius: 10px;
   gap: 10px;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: 0;
-  margin-right: 40px;
 }
-main > div.bar > div.search > img {
+main > div.placement > div.search > img {
   width: 25px;
   height: 25px;
 }
-main > div.bar > div.search > input {
+main > div.placement > div.search > input {
   background: transparent;
   border: none;
+}
+main > div.content > header {
+  font-size: 32px;
+  font-family: var(--primaryFont);
+  font-weight: 750;
+  margin-left: 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main > div.content > header > img {
+  width: 32px;
+  height: 32px;
+}
+main > div.content > div.products {
+  flex-direction: row;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 45px;
+}
+main > div.content > div.products > div.product {
+  margin-top: 10px;
+  width: 30%;
+  height: 38vh;
+  background: var(--background2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+}
+main > div.content > div.products > div.product > img {
+  width: 200px;
+  height: 200px;
+}
+main > div.content > div.products > div.product > div.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main > div.content > div.products > div.product > div.details > span.name {
+  font-family: var(--primaryFont);
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+main > div.content > div.products > div.product > div.details > span.details {
+  font-family: var(--primaryFont);
+  color: rgb(29, 45, 39);
+}
+main > div.content > div.products > div.product > div.details > span.price {
+  font-family: var(--primaryFont);
+  color: rgb(192, 249, 22);
+  font-weight: 600;
+  font-size: 32px;
+}
+@media (max-width: 600px) {
+  main > div.content > div.products {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 45px;
+  }
+}
+@media (max-width: 600px) {
+  main > div.placement {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 145vh;
+    gap: 10px;
+  }
+}
+@media (max-width: 650px) {
 }
