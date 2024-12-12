@@ -2,13 +2,13 @@ main {
   margin-left: 10px;
 }
 main > div.placement {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 main > div.placement > div.bar {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 25px;
@@ -37,6 +37,7 @@ main > div.placement > div.bar > div.redo > img {
   height: 30px;
 }
 main > div.placement > div.search {
+  margin-right: 20px;
   background: var(--background2);
   display: flex;
   width: 240px;
@@ -76,6 +77,7 @@ main > div.content > div.products {
   margin-left: 45px;
 }
 main > div.content > div.products > div.product {
+  flex-grow: 1;
   margin-top: 10px;
   width: 30%;
   height: 38vh;
@@ -87,8 +89,8 @@ main > div.content > div.products > div.product {
   border-radius: 30px;
 }
 main > div.content > div.products > div.product > img {
-  width: 200px;
-  height: 200px;
+  width: 70%;
+  height: 70%;
 }
 main > div.content > div.products > div.product > div.details {
   display: flex;
@@ -101,7 +103,7 @@ main > div.content > div.products > div.product > div.details > span.name {
   font-family: var(--primaryFont);
   font-size: 25px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 10%;
 }
 main > div.content > div.products > div.product > div.details > span.details {
   font-family: var(--primaryFont);
@@ -109,9 +111,10 @@ main > div.content > div.products > div.product > div.details > span.details {
 }
 main > div.content > div.products > div.product > div.details > span.price {
   font-family: var(--primaryFont);
-  color: rgb(192, 249, 22);
+  color: rgb(79, 24, 197);
   font-weight: 600;
   font-size: 32px;
+  margin-bottom: 10px;
 }
 @media (max-width: 600px) {
   main > div.content > div.products {
@@ -122,13 +125,32 @@ main > div.content > div.products > div.product > div.details > span.price {
   }
 }
 @media (max-width: 600px) {
+  main > div.content > div.products > div.product {
+    height: 100%;
+  }
   main > div.placement {
-    display: flex;
+    display: none;
     justify-content: left;
     align-items: center;
     width: 145vh;
     gap: 10px;
   }
 }
+@media (max-width: 800px) {
+  main > div.placement > div.search {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  main > div.content > div.products > div.product > div.details > span.name {
+    font-size: 70%;
+  }
+  main > div.content > div.products > div.product > div.details > span.price {
+    font-size: 100%;
+  }
+}
 @media (max-width: 650px) {
+  main > div.placement > div.bar {
+    gap: 10%;
+  }
 }

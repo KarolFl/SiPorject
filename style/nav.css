@@ -96,3 +96,17 @@ nav > div.user > button {
   font-family: var(--primaryFont);
   font-weight: 600;
 }
+@media (max-width: 650px) {
+  nav > div.logo > span {
+    display: none;
+  }
+  nav > div.menu > ul > li > span {
+    display: none;
+  }
+  nav > div.user {
+    display: none;
+  }
+  nav > div.menu > ul > li > div.notyfications {
+    display: none;
+  }
+}
